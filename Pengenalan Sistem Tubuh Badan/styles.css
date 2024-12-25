@@ -10,141 +10,16 @@ body {
 
 /* Header Section */
 header {
-    background-color: #ff6f61;
+    background-color: #4caf50;
     color: white;
     padding: 20px 10px;
-    border-bottom: 5px solid #ffab91;
+    border-bottom: 5px solid #388e3c;
 }
 
 header h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main Section */
-main {
-    padding: 20px;
-}
-
-/* Search Section */
-#carian {
-    background-color: #ffccbc;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-#search-input {
-    width: 60%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #ff7043;
-    border-radius: 5px;
-}
-
-#search-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#search-btn:hover {
-    background-color: #e64a19;
-}
-
-/* Resource Cards */
-.resource-card {
-    background-color: #ffffff;
-    border: 2px solid #ffa726;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 15px auto;
-    width: 80%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.resource-card h3 {
-    font-size: 1.5rem;
-    color: #ff7043;
-}
-
-.resource-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.resource-card button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.resource-card button:hover {
-    background-color: #e64a19;
-}
-
-/* Footer */
-footer {
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: white;
-    text-decoration: underline;
-}
-
-footer a:hover {
-    text-decoration: none;
-}
-/* Global Styles */
-body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-    color: #333;
-    text-align: center;
-}
-
-/* Header Section */
-header {
-    background-color: #ff6f61;
-    color: white;
-    padding: 20px 10px;
-    border-bottom: 5px solid #ffab91;
-}
-
-header h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2.5rem;
 }
 
 header p {
@@ -158,10 +33,11 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     font-size: 1rem;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #c8e6c9;
 }
 
 /* Main Section */
@@ -171,7 +47,7 @@ main {
 
 /* Search Section */
 #carian {
-    background-color: #ffccbc;
+    background-color: #81c784;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -181,28 +57,30 @@ main {
     width: 60%;
     padding: 10px;
     font-size: 1rem;
-    border: 2px solid #ff7043;
+    border: 2px solid #388e3c;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #search-btn {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #ff5722;
+    background-color: #388e3c;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #search-btn:hover {
-    background-color: #e64a19;
+    background-color: #2e7d32;
 }
 
 /* Resource Cards */
 .resource-card {
     background-color: #ffffff;
-    border: 2px solid #ffa726;
+    border: 2px solid #4caf50;
     border-radius: 10px;
     padding: 20px;
     margin: 15px auto;
@@ -212,7 +90,7 @@ main {
 
 .resource-card h3 {
     font-size: 1.5rem;
-    color: #ff7043;
+    color: #388e3c;
 }
 
 .resource-card p {
@@ -223,23 +101,69 @@ main {
 .resource-card button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #ff5722;
+    background-color: #388e3c;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .resource-card button:hover {
-    background-color: #e64a19;
+    background-color: #2e7d32;
 }
 
-/* Footer */
+/* Question Form Section */
+#soalan {
+    background-color: #aed581;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#soalan label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e7d32;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#soalan input, #soalan textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#soalan textarea {
+    resize: vertical;
+}
+
+#soalan button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#soalan button:hover {
+    background-color: #2e7d32;
+}
+
+/* Footer Section */
 footer {
-    background-color: #ff6f61;
+    background-color: #4caf50;
     color: white;
     padding: 10px;
     font-size: 0.9rem;
+    border-top: 5px solid #388e3c;
 }
 
 footer a {
